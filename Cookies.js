@@ -23,7 +23,7 @@ class Cookies
      * @param {string} [options.domain='']
      * @param {boolean} [options.secure=false]
      * @param {string} [options.sameSite=''] - lax, strict
-     * @returns {void}
+     * @return {void}
      */
     static set(name, value, options)
     {
@@ -108,11 +108,11 @@ class Cookies
      *
      * @param {string} name
      * @param {*} value
-     * @param {int=} [expires=0] - days
-     * @param {string=} [path='/']
-     * @param {string=} [domain='']
-     * @param {boolean=} [secure=false]
-     * @param {string=} [sameSite=''] - lax, strict
+     * @param {int} [expires=0] - days
+     * @param {string} [path='/']
+     * @param {string} [domain='']
+     * @param {boolean} [secure=false]
+     * @param {string} [sameSite=''] - lax, strict
      * @return {void}
      */
     static write(name, value, expires = 0, path = '/', domain = '', secure = false, sameSite = '')
@@ -130,7 +130,7 @@ class Cookies
      * Delete cookie by name (and path)
      *
      * @param {string} name
-     * @param {string=} [path='/']
+     * @param {string} [path='/']
      * @return {void}
      */
     static delete(name, path = '/')
@@ -145,6 +145,7 @@ class Cookies
     /**
      * Validates the cookie name
      *
+     * @private
      * @param {string} name
      * @returns {void}
      * @throws {TypeError}
