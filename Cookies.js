@@ -17,8 +17,8 @@ class Cookies
      * @param {string} name
      * @param {*} value
      * @param {Object=} options
-     * @param {int} [options.expires=0] - days
-     * @param {int} [options.maxAge=null] - seconds
+     * @param {number} [options.expires=0] - days
+     * @param {number} [options.maxAge=null] - seconds
      * @param {string} [options.path='/']
      * @param {string} [options.domain='']
      * @param {boolean} [options.secure=false]
@@ -108,7 +108,7 @@ class Cookies
      *
      * @param {string} name
      * @param {*} value
-     * @param {int} [expires=0] - days
+     * @param {number} [expires=0] - days
      * @param {string} [path='/']
      * @param {string} [domain='']
      * @param {boolean} [secure=false]
